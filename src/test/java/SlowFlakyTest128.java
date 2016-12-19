@@ -4,7 +4,7 @@ import static org.junit.Assert.assertTrue;
 public class SlowFlakyTest128 {
     @Test
     public void testFlaky1() {
-        assertTrue(randNum > 2);
+        assertTrue(new Stupid1OutOf10().isLargerThan(2));
     }
 
     @Test
